@@ -8,21 +8,42 @@ $section-headings-color: $gwanak-green !default;
 
 header {
   text-align: center;
-  height: 13em;
 }
 
 #logo {
-  padding: 1em;
-  height: 10em;
+  padding: 1rem;
+  height: 10rem;
 }
 
 #nav {
   background-color: $gwanak-green;
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 #nav a {
   color: white;
-  font-size: 1.2em;
-  padding: 0.5em;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.main-content {
+  padding: 0rem;
+}
+
+#about {
+  padding: 4rem;
+}
+
+.menu-imgs {
+  line-height: 0; // remove space between images
+}
+
+.menu {
+  line-height: 0; // remove space between images
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact {
+  padding: 2rem;
 }
