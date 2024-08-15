@@ -1,0 +1,22 @@
+---
+---
+
+$gwanak-green: #005640 !default;
+$section-headings-color: $gwanak-green !default;
+
+@import "{{ site.theme }}";
+
+header {
+  text-align: center;
+  height: 20em;
+}
+
+#logo {
+  height: 80%;
+}
+
+#nav a {
+  color: $gwanak-green;
+  font-size: 2em;
+  padding: 0.3em;
+}
