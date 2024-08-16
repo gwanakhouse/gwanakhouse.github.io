@@ -18,11 +18,7 @@
     <header>
       <img id="logo" src="assets/img/logo.png" alt="Logo">
 
-      <nav id="nav">
-        <a href="/">소개</a>
-        <a href="/menu">메뉴</a>
-        <a href="/contact">연락처</a>
-      </nav>
+      {% include navigation.html %}
     </header>
     <main id="content" class="main-content">
       {{ content }}

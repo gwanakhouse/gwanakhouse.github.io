@@ -1,0 +1,6 @@
+- name: 소개
+  link: /
+- name: 메뉴
+  link: /menu.html
+- name: 연락처
+  link: /contact.html
