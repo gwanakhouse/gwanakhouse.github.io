@@ -5,6 +5,11 @@ $gwanak-green: #005640 !default;
 $section-headings-color: $gwanak-green !default;
 
 @import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap");
+
+body {
+  font-family: "Noto Serif KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 header {
   text-align: center;
@@ -24,6 +29,11 @@ header {
   color: white;
   font-size: 1.2rem;
   padding: 0.5rem;
+}
+
+#nav a:hover {
+  font-weight: bold;
+  text-decoration: none; // remove underline
 }
 
 .main-content {
