@@ -3,7 +3,23 @@ layout: default
 title: 연락처
 ---
 
-<img src="/assets/img/interior.jpeg" alt="Interior">
+<div id="contact-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {% for img in site.data.contact_carousel %}
+      <div class="carousel-item {% if forloop.first %} active {% endif %}" data-bs-interval="3000">
+        <img src="{{ img.link }}" class="d-block w-100" alt="{{ img.alt }}">
+      </div>
+    {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#contact-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#contact-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <div class="contact">
   주소: <a href="https://naver.me/Fawb2tq8">경기 안양시 만안구 삼막로39번길 35</a>
