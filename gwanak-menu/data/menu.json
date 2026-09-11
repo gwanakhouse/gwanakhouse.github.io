@@ -1,0 +1,464 @@
+{
+  "canvas": {
+    "width": 2048,
+    "height": 1155
+  },
+  "meta": {
+    "documentTitle": "관악별장 메뉴",
+    "canvasLabel": "관악별장 고정 메뉴 캔버스",
+    "loadingText": "Loading menu..."
+  },
+  "utilityNote": "전 음료 텀블러 0.5 할인  |  아이스 +0.5  |  디카페인 +1.0",
+  "columns": [
+    {
+      "id": "left",
+      "sections": [
+        "signature",
+        "coffee",
+        "nonCoffee"
+      ]
+    },
+    {
+      "id": "middle",
+      "sections": [
+        "fruitsSpecial",
+        "teaPot"
+      ]
+    },
+    {
+      "id": "dessert",
+      "sections": [
+        "dessert"
+      ]
+    }
+  ],
+  "sections": {
+    "signature": {
+      "title": "Signature",
+      "layout": "signature-showcase",
+      "showUtilityNote": true,
+      "items": [
+        {
+          "id": "signature-floral-latte",
+          "section": "signature",
+          "order": 1,
+          "active": true,
+          "status": "active",
+          "name": "관악별장 플로럴 라떼",
+          "description": "장미수와 숙성 밀크로 완성한 은은한 플로럴 라떼",
+          "price": "7.5",
+          "image": "assets/products/signature-floral-latte.png",
+          "temperature": "ice only"
+        },
+        {
+          "id": "signature-maple-injeolmi-latte",
+          "section": "signature",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "메이플 인절미 라떼",
+          "description": "국산 콩가루와 메이플의 깊은 고소함을 품은 크림 라테",
+          "price": "7.5",
+          "image": "assets/products/signature-maple-injeolmi-latte.png",
+          "temperature": "ice only"
+        },
+        {
+          "id": "signature-mugwort-cream-latte",
+          "section": "signature",
+          "order": 3,
+          "active": true,
+          "status": "active",
+          "name": "쑥크림 라떼",
+          "description": "어린 유기농 쑥의 향긋함과 풍부한 크림의 조화",
+          "price": "7.5",
+          "image": "assets/products/signature-mugwort-cream-latte.png",
+          "temperature": "hot only"
+        },
+        {
+          "id": "signature-levain-cookie-set",
+          "section": "signature",
+          "order": 4,
+          "active": true,
+          "status": "active",
+          "name": "뉴욕 르뱅쿠키 세트",
+          "description": "카페라테 +1.0 | 바닐라빈 +1.5 | 시그니처 +2.0",
+          "subdescription": "르뱅쿠키 + 아메리카노",
+          "price": "10.0",
+          "image": "assets/products/signature-levain-cookie-set.png",
+          "recommendation": "추천 페어링",
+          "cardLayout": "promo",
+          "featured": true
+        }
+      ]
+    },
+    "coffee": {
+      "title": "Coffee",
+      "layout": "standard",
+      "showUtilityNote": true,
+      "utilityNote": "아이스 +0.5 | 디카페인 +1.0",
+      "items": [
+        {
+          "id": "coffee-espresso",
+          "section": "coffee",
+          "order": 1,
+          "active": true,
+          "status": "active",
+          "name": "에스프레소",
+          "price": "5.5",
+          "image": null
+        },
+        {
+          "id": "coffee-americano",
+          "section": "coffee",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "아메리카노",
+          "price": "5.5",
+          "image": null
+        },
+        {
+          "id": "coffee-cappuccino-cafe-latte",
+          "section": "coffee",
+          "order": 3,
+          "active": true,
+          "status": "active",
+          "name": "카푸치노 / 카페라테",
+          "price": "6.5",
+          "image": null
+        },
+        {
+          "id": "coffee-homemade-vanilla-bean-latte",
+          "section": "coffee",
+          "order": 4,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 바닐라빈 라테",
+          "description": "타히티 바닐라빈과 유기농 비정제 설탕 수제 시럽으로 만든 라테",
+          "price": "7.0",
+          "image": null
+        },
+        {
+          "id": "coffee-gosocato",
+          "section": "coffee",
+          "order": 5,
+          "active": true,
+          "status": "active",
+          "name": "고소카토",
+          "description": "고소한 시그니처 커피에 견과류와 바닐라 아이스크림을 더한 고소한 아포가토",
+          "price": "7.5",
+          "image": null
+        }
+      ]
+    },
+    "nonCoffee": {
+      "title": "Non-Coffee",
+      "layout": "standard",
+      "showUtilityNote": true,
+      "utilityNote": "아이스 +0.5 | 디카페인 +1.0",
+      "items": [
+        {
+          "id": "non-coffee-dirty-chocolate",
+          "section": "nonCoffee",
+          "order": 1,
+          "active": true,
+          "status": "active",
+          "name": "더티 초콜렛",
+          "description": "벨기에산 다크생초콜렛을 직접 녹여 꾸덕하고 진한 초코베이스에\n마다가스카르산 바닐라빈 생크림 없이 만든 핫초코라떼",
+          "price": "7.5",
+          "image": "assets/products/non-coffee-dirty-chocolate.png"
+        },
+        {
+          "id": "non-coffee-strawberry-matcha-latte",
+          "section": "nonCoffee",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 딸기 말차라떼",
+          "description": "수제 딸기청과 교토 우지 100% 수제 말차로 만든 라테",
+          "price": "7.5",
+          "image": "assets/products/non-coffee-strawberry-matcha-latte.png",
+          "temperature": "ice only",
+          "recommendation": "아내추천"
+        },
+        {
+          "id": "non-coffee-strawberry-latte",
+          "section": "nonCoffee",
+          "order": 3,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 딸기라떼",
+          "description": "유기농 비정제 설탕으로 숙성시킨 홈메이드 딸기라테",
+          "price": "7.0",
+          "image": null,
+          "temperature": "ice only"
+        },
+        {
+          "id": "non-coffee-matcha-latte",
+          "section": "nonCoffee",
+          "order": 4,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 말차라떼",
+          "description": "교토 우지의 최상급 말차 100%로 만든 수제 말차라테",
+          "price": "7.0",
+          "image": null
+        },
+        {
+          "id": "non-coffee-lemon-ginger-tea",
+          "section": "nonCoffee",
+          "order": 5,
+          "active": true,
+          "status": "active",
+          "name": "생레몬 생강차",
+          "description": "직접 착즙한 생레몬의 상큼함과 알싸한 생강이 매력적인 웰메이드 수제티",
+          "price": "7.5",
+          "image": "assets/products/non-coffee-lemon-ginger-tea.png",
+          "temperature": "hot only"
+        },
+        {
+          "id": "non-coffee-fresh-lemon-tea",
+          "section": "nonCoffee",
+          "order": 6,
+          "active": true,
+          "status": "active",
+          "name": "프레쉬 레몬티",
+          "description": "싱싱한 레몬을 직접 짠 후 비정제 유기농 시럽으로 달지 않게 만든 상큼한 레몬차",
+          "price": "7.0",
+          "image": null
+        }
+      ]
+    },
+    "fruitsSpecial": {
+      "title": "Home-made Fruits Ade & Tea",
+      "layout": "fruit-grid",
+      "items": [
+        {
+          "id": "fruits-berry-smoothie",
+          "section": "fruitsSpecial",
+          "order": 1,
+          "active": true,
+          "status": "active",
+          "name": "베리베리\n스무디",
+          "description": "블랙베리, 라즈베리,\n블루베리를 통째로 갈아\n만든 상큼하고 시원한\n건강 스무디",
+          "price": "9.0",
+          "image": "assets/products/fruits-berry-smoothie.png"
+        },
+        {
+          "id": "fruits-triple-berry-ade",
+          "section": "fruitsSpecial",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "트리플베리\n에이드",
+          "description": "손수 담근 라즈베리,\n블랙베리, 블루베리청을\n직접 떠 먹는\n향긋한 에이드",
+          "price": "8.0",
+          "image": "assets/products/fruits-triple-berry-ade.png"
+        },
+        {
+          "id": "fruits-lemon-ade",
+          "section": "fruitsSpecial",
+          "order": 3,
+          "active": true,
+          "status": "active",
+          "name": "프레쉬\n레몬에이드",
+          "description": "싱싱한 레몬을 손수 짜서\n유기농 시럽으로 갓 만든\n달지 않은 새콤한 에이드",
+          "price": "7.5",
+          "image": "assets/products/fruits-lemon-ade.png"
+        },
+        {
+          "id": "fruits-lemon-earl-grey-iced-tea",
+          "section": "fruitsSpecial",
+          "order": 4,
+          "active": true,
+          "status": "active",
+          "name": "레몬 얼그레이\n아이스티",
+          "description": "프레쉬 레몬즙과 프리미엄\n영국산 얼그레이티의\n환상적인 균형을 자랑하는\n스페셜 아이스티",
+          "price": "8.0",
+          "image": "assets/products/signature-lemon-earl-grey-iced-tea.png",
+          "recommendation": "점장추천"
+        },
+        {
+          "id": "fruits-passion-hibiscus-iced-tea",
+          "section": "fruitsSpecial",
+          "order": 5,
+          "active": true,
+          "status": "active",
+          "name": "패션후르츠\n히비스커스 아이스티",
+          "description": "패션후르츠 위에\n히비스커스티로\n상큼함을 더한\n스페셜 카페인티",
+          "price": "8.5",
+          "image": "assets/products/fruits-passion-hibiscus-iced-tea.png"
+        }
+      ]
+    },
+    "teaPot": {
+      "title": "Tea pot",
+      "layout": "standard",
+      "items": [
+        {
+          "id": "tea-pot-rishi-tea",
+          "section": "teaPot",
+          "order": 1,
+          "active": true,
+          "status": "active",
+          "name": "프리미엄 유기농 블랜드티(Rishi tea)",
+          "description": "장인들의 전통재배방식을 고집한 최상급 유기농 ‘스페셜 블랜드티’",
+          "price": "hot 8.0\nice 8.5",
+          "image": "assets/products/tea-pot-rishi-tea.png",
+          "featured": true
+        },
+        {
+          "id": "tea-pot-hibiscus-berry",
+          "section": "teaPot",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "히비스커스 베리(non-caffeine)",
+          "description": "각종 베리류 사과, 히비스커스 조화가 좋은 과일향의 허브 블랜드",
+          "subdescription": "· Ingredients : 엘더베리, 사과, 커런트, 히비스커스, 로즈힙",
+          "price": null,
+          "image": null
+        },
+        {
+          "id": "tea-pot-chamomile-medley",
+          "section": "teaPot",
+          "order": 3,
+          "active": true,
+          "status": "active",
+          "name": "캐모마일 메들리(non-caffeine)",
+          "description": "달콤하면서 차분함과 상쾌함을 주는 캐모마일의 앙상블, 리쉬의 대표 시그니처",
+          "subdescription": "· Ingredients : 스피아민트, 레몬버베나, 레몬그라스, 크로아티아 캐모마일 꽃",
+          "price": null,
+          "image": null
+        },
+        {
+          "id": "tea-pot-earl-grey",
+          "section": "teaPot",
+          "order": 4,
+          "active": true,
+          "status": "active",
+          "name": "얼그레이 (caffeine)",
+          "description": "부드러운 홍차에 이탈리아 베르가못의 산뜻한 시트러스와 꽃향이 어우러진 클래식",
+          "subdescription": "· Ingredients : 유기농 홍차, 베르가못 에센셜 오일",
+          "price": null,
+          "image": null
+        }
+      ]
+    },
+    "dessert": {
+      "title": "Dessert",
+      "layout": "dessert-editorial",
+      "items": [
+        {
+          "id": "dessert-mango-bingsu",
+          "section": "dessert",
+          "order": 1,
+          "active": true,
+          "status": "paused",
+          "name": "제철과일 밀크타래빙수 (2인분)",
+          "statusLabel": "가격변동",
+          "description": "프리미엄 제철 과일이 통째로 올라간 부드러운 우유 타래빙수 (팥추가 +1.0)",
+          "price": null,
+          "image": "assets/products/dessert-mango-bingsu.png",
+          "slot": "mango-bingsoo"
+        },
+        {
+          "id": "dessert-redbean-bingsu",
+          "section": "dessert",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "수제팥 밀크타래빙수 (2인분)",
+          "description": "어머니로부터 전수받은 100% 국산 통팥 고명과 고소한 콩가루를\n비벼먹는 순수 우유 타래빙수 (팥추가 +1.0)",
+          "price": "19.0",
+          "image": null,
+          "slot": "redbean-bingsoo"
+        },
+        {
+          "id": "dessert-tiramisu-platter",
+          "section": "dessert",
+          "order": 3,
+          "active": true,
+          "status": "active",
+          "name": "관악별장 티라미수 플래터",
+          "description": "클래식, 레몬 얼그레이, 말차레드빈 티라미수를 맛볼 수 있는 시그니처 플래터",
+          "price": "14.0",
+          "image": "assets/products/dessert-tiramisu-platter.png",
+          "slot": "platter",
+          "recommendation": "사장추천"
+        },
+        {
+          "id": "dessert-couple-set",
+          "section": "dessert",
+          "order": 4,
+          "active": true,
+          "status": "active",
+          "name": "커플세트 (아메리카노 2잔 포함)",
+          "price": "23.0",
+          "image": null,
+          "slot": "couple-set"
+        },
+        {
+          "id": "dessert-classic-tiramisu",
+          "section": "dessert",
+          "order": 5,
+          "active": true,
+          "status": "active",
+          "name": "클래식 티라미수",
+          "description": "진한 치즈의 풍미와 초콜릿이\n어우러진 정통 티라미수",
+          "price": "8.0",
+          "image": "assets/products/dessert-classic-tiramisu.png",
+          "slot": "classic"
+        },
+        {
+          "id": "dessert-lemon-earl-grey-tiramisu",
+          "section": "dessert",
+          "order": 6,
+          "active": true,
+          "status": "active",
+          "name": "레몬 얼그레이 티라미수",
+          "description": "얼그레이 크림과 레몬 제스트의\n향긋함이 만난 시그니처 티라미수",
+          "price": "8.0",
+          "image": "assets/products/dessert-lemon-earl-grey-tiramisu.png",
+          "slot": "lemon"
+        },
+        {
+          "id": "dessert-matcha-redbean-tiramisu",
+          "section": "dessert",
+          "order": 7,
+          "active": true,
+          "status": "active",
+          "name": "말차레드빈 티라미수",
+          "description": "최상급 우지 말차 100% 크림과\n직접 쑨 팥 앙금이 들어간 티라미수",
+          "price": "8.5",
+          "image": "assets/products/dessert-matcha-redbean-tiramisu.png",
+          "slot": "matcha"
+        },
+        {
+          "id": "dessert-walnut-pound-cake",
+          "section": "dessert",
+          "order": 8,
+          "active": true,
+          "status": "active",
+          "name": "호두 파운드 케이크",
+          "description": "쫀쫀한 생크림과 향긋한 시나몬을 얹은 촉촉하고 고소한 호두 파운드",
+          "price": "8.5",
+          "image": "assets/products/dessert-walnut-pound-cake.png",
+          "slot": "butterbar"
+        },
+        {
+          "id": "dessert-levain-cookie-ice-cream",
+          "section": "dessert",
+          "order": 9,
+          "active": true,
+          "status": "active",
+          "name": "뉴욕 르뱅쿠키&아이스크림",
+          "description": "호두, 마카다미아 넛트와 다크, 밀크 초콜릿의\n촉촉한 뉴욕식 쿠키와 진한 바닐라 아이스크림",
+          "price": "7.5",
+          "image": "assets/products/dessert-levain-cookie-ice-cream.png",
+          "slot": "cookie"
+        }
+      ]
+    }
+  }
+}

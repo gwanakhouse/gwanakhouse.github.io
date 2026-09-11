@@ -1,0 +1,9 @@
+{
+  "name": "gwanak-menu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-menu.mjs"
+  }
+}
