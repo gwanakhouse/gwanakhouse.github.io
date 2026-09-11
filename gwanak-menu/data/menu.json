@@ -223,8 +223,17 @@
           "active": true,
           "status": "active",
           "name": "프레쉬 레몬티",
-          "description": "싱싱한 레몬을 직접 짠 후 비정제 유기농 시럽으로 달지 않게 만든 상큼한 레몬차",
           "price": "7.0",
+          "image": null
+        },
+        {
+          "id": "non-coffee-peach-iced-tea",
+          "section": "nonCoffee",
+          "order": 7,
+          "active": true,
+          "status": "active",
+          "name": "복숭아 아이스티",
+          "price": "7.5",
           "image": null
         }
       ]
