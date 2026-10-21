@@ -351,6 +351,18 @@
           "subdescription": "· Ingredients : 유기농 홍차, 베르가못 에센셜 오일",
           "price": null,
           "image": null
+        },
+        {
+          "id": "tea-pot-peppermint-rooibos",
+          "section": "teaPot",
+          "order": 5,
+          "active": true,
+          "status": "active",
+          "name": "페퍼민트 루이보스 (non-caffeine)",
+          "description": "상쾌한 페퍼민트와 부드럽고 달콤한 루이보스가 어우러진 청량하고 편안한 허브 블렌드",
+          "subdescription": "· Ingredients : 페퍼민트, 루이보스",
+          "price": null,
+          "image": null
         }
       ]
     },
