@@ -327,15 +327,6 @@ function renderSeasonalItem(item) {
   itemEl.append(renderImageSlot(item.image, "seasonal-image", item));
   itemEl.append(createElement("h3", "seasonal-name", item.name));
 
-  const tags = getItemBadges(item, { includeRecommendation: false });
-  if (tags.length > 0) {
-    const tagRow = createElement("div", "seasonal-tags");
-    for (const badge of tags) {
-      tagRow.append(renderBadge(badge));
-    }
-    itemEl.append(tagRow);
-  }
-
   if (item.description) {
     const description = createElement("p", "seasonal-description", item.description);
     applyTextOverrides(description, item);
@@ -345,8 +336,8 @@ function renderSeasonalItem(item) {
   const priceRow = createElement("div", "seasonal-price-row");
   appendPrice(priceRow, item, "seasonal-price");
 
-  if (item.recommendation) {
-    priceRow.append(renderBadge({ label: item.recommendation, tone: "heart" }));
+  for (const badge of getItemBadges(item)) {
+    priceRow.append(renderBadge(badge));
   }
 
   itemEl.append(priceRow);
@@ -440,7 +431,7 @@ function renderItemHeading(item) {
   return heading;
 }
 
-function getItemBadges(item, { includeRecommendation = true } = {}) {
+function getItemBadges(item) {
   const badges = [];
   const temperatureBadge = normalizeTemperatureBadge(item.temperature);
 
@@ -452,7 +443,7 @@ function getItemBadges(item, { includeRecommendation = true } = {}) {
     badges.push({ label: item.seasonalLabel, tone: "season" });
   }
 
-  if (includeRecommendation && item.recommendation) {
+  if (item.recommendation) {
     badges.push({ label: item.recommendation, tone: "heart" });
   }
 

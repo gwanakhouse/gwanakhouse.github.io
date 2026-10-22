@@ -168,12 +168,6 @@
           "description": "구수하게 볶은 호지차와\n부드러운 우유의 라떼",
           "price": "7.5",
           "image": "assets/products/non-coffee-hojicha-latte.png",
-          "badges": [
-            {
-              "label": "NEW",
-              "tone": "new"
-            }
-          ],
           "recommendation": "아내추천"
         },
         {
@@ -186,11 +180,7 @@
           "name": "더티 초콜렛",
           "description": "벨기에산 다크 초콜릿을\n직접 녹인 진한 핫초코",
           "price": "7.5",
-          "image": "assets/products/non-coffee-dirty-chocolate.png",
-          "temperature": {
-            "label": "hot",
-            "tone": "hot"
-          }
+          "image": "assets/products/non-coffee-dirty-chocolate.png"
         },
         {
           "id": "non-coffee-jujube-tea",
@@ -203,12 +193,6 @@
           "description": "대추를 진하게 달여 낸\n따뜻한 수제 대추차",
           "price": "9.0",
           "image": "assets/products/non-coffee-jujube-tea.png",
-          "badges": [
-            {
-              "label": "NEW",
-              "tone": "new"
-            }
-          ],
           "recommendation": "점장추천"
         },
         {
@@ -366,9 +350,9 @@
           "order": 2,
           "active": true,
           "status": "active",
-          "name": "히비스커스 베리(non-caffeine)",
-          "description": "각종 베리류 사과, 히비스커스 조화가 좋은 과일향의 허브 블랜드",
-          "subdescription": "· Ingredients : 엘더베리, 사과, 커런트, 히비스커스, 로즈힙",
+          "name": "히비스커스 베리",
+          "detail": "non-caffeine",
+          "subdescription": "엘더베리 · 사과 · 키위 · 히비스커스 · 로즈힙",
           "price": null,
           "image": null
         },
@@ -378,9 +362,9 @@
           "order": 3,
           "active": true,
           "status": "active",
-          "name": "캐모마일 메들리(non-caffeine)",
-          "description": "달콤하면서 차분함과 상쾌함을 주는 캐모마일의 앙상블, 리쉬의 대표 시그니처",
-          "subdescription": "· Ingredients : 스피아민트, 레몬버베나, 레몬그라스, 크로아티아 캐모마일 꽃",
+          "name": "캐모마일 메들리",
+          "detail": "non-caffeine",
+          "subdescription": "스피아민트 · 레몬버베나 · 레몬그라스 · 캐모마일",
           "price": null,
           "image": null
         },
@@ -390,9 +374,9 @@
           "order": 4,
           "active": true,
           "status": "active",
-          "name": "얼그레이 (caffeine)",
-          "description": "부드러운 홍차에 이탈리아 베르가못의 산뜻한 시트러스와 꽃향이 어우러진 클래식",
-          "subdescription": "· Ingredients : 유기농 홍차, 베르가못 에센셜 오일",
+          "name": "얼그레이",
+          "detail": "caffeine",
+          "subdescription": "유기농 홍차 · 베르가못 오일",
           "price": null,
           "image": null
         },
@@ -402,9 +386,9 @@
           "order": 5,
           "active": true,
           "status": "active",
-          "name": "페퍼민트 루이보스 (non-caffeine)",
-          "description": "상쾌한 페퍼민트와 부드럽고 달콤한 루이보스가 어우러진 청량하고 편안한 허브 블렌드",
-          "subdescription": "· Ingredients : 페퍼민트, 루이보스",
+          "name": "페퍼민트 루이보스",
+          "detail": "non-caffeine",
+          "subdescription": "유기농 루이보스 · 페퍼민트 · 베르가못 오일",
           "price": null,
           "image": null
         }
