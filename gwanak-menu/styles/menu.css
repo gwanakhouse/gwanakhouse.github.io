@@ -152,7 +152,7 @@ body {
   left: -5px;
   top: 675px;
   width: 683px;
-  height: 396px;
+  height: 379px;
 }
 
 .section-header {
@@ -1327,7 +1327,7 @@ body {
 }
 
 .section-teaPot .section-body {
-  padding-top: 8px;
+  padding-top: 14px;
   padding-left: 11px;
 }
 
@@ -1338,17 +1338,17 @@ body {
 }
 
 .section-teaPot .standard-item:nth-child(1) {
-  height: 74px;
+  height: 82px;
 }
 
 .section-teaPot .standard-item:nth-child(n + 2) {
-  height: 70px;
+  height: 82px;
   margin-left: 15px;
   padding-right: 235px;
 }
 
-.section-teaPot .standard-item:nth-child(5) {
-  height: 54px;
+.section-teaPot .standard-item:nth-child(4) {
+  height: 68px;
 }
 
 .section-teaPot .standard-item:nth-child(2)::before {
@@ -1357,7 +1357,7 @@ body {
   left: -12px;
   top: -2px;
   width: 1px;
-  height: 266px;
+  height: 226px;
   background: var(--divider);
 }
 
