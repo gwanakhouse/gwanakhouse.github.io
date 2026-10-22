@@ -73,6 +73,8 @@ function renderSection(sectionId, section, menu) {
     body.append(renderFruitGrid(items));
   } else if (section.layout === "signature-showcase") {
     body.append(renderSignatureShowcase(items));
+  } else if (section.layout === "seasonal-columns") {
+    body.append(renderSeasonalColumns(section, items));
   } else {
     items.forEach((item, index) => {
       body.append(renderStandardItem(item, index));
@@ -283,6 +285,74 @@ function renderFruitGrid(items) {
   return grid;
 }
 
+function renderSeasonalColumns(section, items) {
+  const board = createElement("div", "seasonal-columns");
+  const seasonalItems = items.filter((item) => item.group === "seasonal");
+
+  if (seasonalItems.length > 0) {
+    const block = createElement("div", "seasonal-block");
+
+    if (section.seasonalTitle) {
+      block.append(createElement("div", "seasonal-label", section.seasonalTitle));
+    }
+
+    const row = createElement("div", "seasonal-row");
+    for (const item of seasonalItems) {
+      row.append(renderSeasonalItem(item));
+    }
+
+    block.append(row);
+    board.append(block);
+  }
+
+  const list = createElement("div", "split-list");
+
+  ["left", "right"].forEach((group, columnIndex) => {
+    items
+      .filter((item) => item.group === group)
+      .forEach((item, rowIndex) => {
+        const itemEl = renderStandardItem(item, rowIndex);
+        itemEl.style.gridColumn = String(columnIndex + 1);
+        itemEl.style.gridRow = String(rowIndex + 1);
+        list.append(itemEl);
+      });
+  });
+
+  board.append(list);
+  return board;
+}
+
+function renderSeasonalItem(item) {
+  const itemEl = createElement("article", "seasonal-item");
+  itemEl.append(renderImageSlot(item.image, "seasonal-image", item));
+  itemEl.append(createElement("h3", "seasonal-name", item.name));
+
+  const tags = getItemBadges(item, { includeRecommendation: false });
+  if (tags.length > 0) {
+    const tagRow = createElement("div", "seasonal-tags");
+    for (const badge of tags) {
+      tagRow.append(renderBadge(badge));
+    }
+    itemEl.append(tagRow);
+  }
+
+  if (item.description) {
+    const description = createElement("p", "seasonal-description", item.description);
+    applyTextOverrides(description, item);
+    itemEl.append(description);
+  }
+
+  const priceRow = createElement("div", "seasonal-price-row");
+  appendPrice(priceRow, item, "seasonal-price");
+
+  if (item.recommendation) {
+    priceRow.append(renderBadge({ label: item.recommendation, tone: "heart" }));
+  }
+
+  itemEl.append(priceRow);
+  return itemEl;
+}
+
 function renderDessert(section, items) {
   const stage = createElement("div", "dessert-stage");
   const titleWrap = createElement("div", "dessert-title-wrap");
@@ -370,7 +440,7 @@ function renderItemHeading(item) {
   return heading;
 }
 
-function getItemBadges(item) {
+function getItemBadges(item, { includeRecommendation = true } = {}) {
   const badges = [];
   const temperatureBadge = normalizeTemperatureBadge(item.temperature);
 
@@ -382,7 +452,7 @@ function getItemBadges(item) {
     badges.push({ label: item.seasonalLabel, tone: "season" });
   }
 
-  if (item.recommendation) {
+  if (includeRecommendation && item.recommendation) {
     badges.push({ label: item.recommendation, tone: "heart" });
   }
 

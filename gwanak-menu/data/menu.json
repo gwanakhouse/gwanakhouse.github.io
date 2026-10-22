@@ -15,14 +15,13 @@
       "sections": [
         "signature",
         "coffee",
-        "nonCoffee"
+        "teaPot"
       ]
     },
     {
       "id": "middle",
       "sections": [
-        "fruitsSpecial",
-        "teaPot"
+        "nonCoffee"
       ]
     },
     {
@@ -153,73 +152,132 @@
     },
     "nonCoffee": {
       "title": "Non-Coffee",
-      "layout": "standard",
+      "layout": "seasonal-columns",
       "showUtilityNote": true,
       "utilityNote": "아이스 +0.5 | 디카페인 +1.0",
+      "seasonalTitle": "Seasonal Special",
       "items": [
         {
-          "id": "non-coffee-dirty-chocolate",
+          "id": "non-coffee-hojicha-latte",
           "section": "nonCoffee",
+          "group": "seasonal",
           "order": 1,
           "active": true,
           "status": "active",
-          "name": "더티 초콜렛",
-          "description": "벨기에산 다크생초콜렛을 직접 녹여 꾸덕하고 진한 초코베이스에\n마다가스카르산 바닐라빈 생크림 없이 만든 핫초코라떼",
+          "name": "호지차라떼",
+          "description": "구수하게 볶은 호지차와\n부드러운 우유의 라떼",
           "price": "7.5",
-          "image": "assets/products/non-coffee-dirty-chocolate.png"
-        },
-        {
-          "id": "non-coffee-strawberry-matcha-latte",
-          "section": "nonCoffee",
-          "order": 2,
-          "active": true,
-          "status": "active",
-          "name": "홈메이드 딸기 말차라떼",
-          "description": "수제 딸기청과 교토 우지 100% 수제 말차로 만든 라테",
-          "price": "7.5",
-          "image": "assets/products/non-coffee-strawberry-matcha-latte.png",
-          "temperature": "ice only",
+          "image": "assets/products/non-coffee-hojicha-latte.png",
+          "badges": [
+            {
+              "label": "NEW",
+              "tone": "new"
+            }
+          ],
           "recommendation": "아내추천"
         },
         {
-          "id": "non-coffee-strawberry-latte",
+          "id": "non-coffee-dirty-chocolate",
           "section": "nonCoffee",
+          "group": "seasonal",
+          "order": 2,
+          "active": true,
+          "status": "active",
+          "name": "더티 초콜렛",
+          "description": "벨기에산 다크 초콜릿을\n직접 녹인 진한 핫초코",
+          "price": "7.5",
+          "image": "assets/products/non-coffee-dirty-chocolate.png",
+          "temperature": {
+            "label": "hot",
+            "tone": "hot"
+          }
+        },
+        {
+          "id": "non-coffee-jujube-tea",
+          "section": "nonCoffee",
+          "group": "seasonal",
           "order": 3,
           "active": true,
           "status": "active",
-          "name": "홈메이드 딸기라떼",
-          "description": "유기농 비정제 설탕으로 숙성시킨 홈메이드 딸기라테",
-          "price": "7.0",
-          "image": null,
-          "temperature": "ice only"
-        },
-        {
-          "id": "non-coffee-matcha-latte",
-          "section": "nonCoffee",
-          "order": 4,
-          "active": true,
-          "status": "active",
-          "name": "홈메이드 말차라떼",
-          "description": "교토 우지의 최상급 말차 100%로 만든 수제 말차라테",
-          "price": "7.0",
-          "image": null
+          "name": "수제 대추차",
+          "description": "대추를 진하게 달여 낸\n따뜻한 수제 대추차",
+          "price": "9.0",
+          "image": "assets/products/non-coffee-jujube-tea.png",
+          "badges": [
+            {
+              "label": "NEW",
+              "tone": "new"
+            }
+          ],
+          "recommendation": "점장추천"
         },
         {
           "id": "non-coffee-lemon-ginger-tea",
           "section": "nonCoffee",
-          "order": 5,
+          "group": "seasonal",
+          "order": 4,
           "active": true,
           "status": "active",
           "name": "생레몬 생강차",
-          "description": "직접 착즙한 생레몬의 상큼함과 알싸한 생강이 매력적인 웰메이드 수제티",
+          "description": "직접 착즙한 생레몬과\n알싸한 생강의 수제차",
           "price": "7.5",
           "image": "assets/products/non-coffee-lemon-ginger-tea.png",
           "temperature": "hot only"
         },
         {
+          "id": "non-coffee-strawberry-matcha-latte",
+          "section": "nonCoffee",
+          "group": "left",
+          "order": 5,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 딸기 말차라떼",
+          "description": "수제 딸기청과 교토 우지 100% 수제 말차로 만든 라떼",
+          "price": "7.5",
+          "image": "assets/products/non-coffee-strawberry-matcha-latte.png",
+          "temperature": "ice only"
+        },
+        {
+          "id": "non-coffee-matcha-latte",
+          "section": "nonCoffee",
+          "group": "left",
+          "order": 6,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 말차라떼",
+          "description": "교토 우지의 최상급 말차 100%로 만든 수제 말차라떼",
+          "price": "7.0",
+          "image": null
+        },
+        {
+          "id": "non-coffee-strawberry-latte",
+          "section": "nonCoffee",
+          "group": "left",
+          "order": 7,
+          "active": true,
+          "status": "active",
+          "name": "홈메이드 딸기라떼",
+          "description": "유기농 비정제 설탕으로 숙성시킨 홈메이드 딸기라떼",
+          "price": "7.0",
+          "image": null,
+          "temperature": "ice only"
+        },
+        {
+          "id": "non-coffee-peach-iced-tea",
+          "section": "nonCoffee",
+          "group": "left",
+          "order": 8,
+          "active": true,
+          "status": "active",
+          "name": "복숭아 아이스티",
+          "price": "7.5",
+          "image": null
+        },
+        {
           "id": "non-coffee-fresh-lemon-tea",
           "section": "nonCoffee",
-          "order": 6,
+          "group": "left",
+          "order": 9,
           "active": true,
           "status": "active",
           "name": "프레쉬 레몬티",
@@ -227,76 +285,62 @@
           "image": null
         },
         {
-          "id": "non-coffee-peach-iced-tea",
+          "id": "non-coffee-berry-smoothie",
           "section": "nonCoffee",
-          "order": 7,
+          "group": "right",
+          "order": 10,
           "active": true,
           "status": "active",
-          "name": "복숭아 아이스티",
-          "price": "7.5",
-          "image": null
-        }
-      ]
-    },
-    "fruitsSpecial": {
-      "title": "Home-made Fruits Ade & Tea",
-      "layout": "fruit-grid",
-      "items": [
-        {
-          "id": "fruits-berry-smoothie",
-          "section": "fruitsSpecial",
-          "order": 1,
-          "active": true,
-          "status": "active",
-          "name": "베리베리\n스무디",
-          "description": "블랙베리, 라즈베리,\n블루베리를 통째로 갈아\n만든 상큼하고 시원한\n건강 스무디",
+          "name": "베리베리 스무디",
+          "description": "베리를 통째로 갈아 만든 상큼하고 시원한 건강 스무디",
           "price": "9.0",
           "image": "assets/products/fruits-berry-smoothie.png"
         },
         {
-          "id": "fruits-triple-berry-ade",
-          "section": "fruitsSpecial",
-          "order": 2,
+          "id": "non-coffee-lemon-earl-grey-iced-tea",
+          "section": "nonCoffee",
+          "group": "right",
+          "order": 11,
           "active": true,
           "status": "active",
-          "name": "트리플베리\n에이드",
-          "description": "손수 담근 라즈베리,\n블랙베리, 블루베리청을\n직접 떠 먹는\n향긋한 에이드",
+          "name": "레몬 얼그레이 아이스티",
+          "description": "프레쉬 레몬즙과 영국산 얼그레이의 상큼한 균형",
           "price": "8.0",
-          "image": "assets/products/fruits-triple-berry-ade.png"
+          "image": null
         },
         {
-          "id": "fruits-lemon-ade",
-          "section": "fruitsSpecial",
-          "order": 3,
+          "id": "non-coffee-passion-hibiscus-iced-tea",
+          "section": "nonCoffee",
+          "group": "right",
+          "order": 12,
           "active": true,
           "status": "active",
-          "name": "프레쉬\n레몬에이드",
-          "description": "싱싱한 레몬을 손수 짜서\n유기농 시럽으로 갓 만든\n달지 않은 새콤한 에이드",
-          "price": "7.5",
-          "image": "assets/products/fruits-lemon-ade.png"
-        },
-        {
-          "id": "fruits-lemon-earl-grey-iced-tea",
-          "section": "fruitsSpecial",
-          "order": 4,
-          "active": true,
-          "status": "active",
-          "name": "레몬 얼그레이\n아이스티",
-          "description": "프레쉬 레몬즙과 프리미엄\n영국산 얼그레이티의\n환상적인 균형을 자랑하는\n스페셜 아이스티",
-          "price": "8.0",
-          "image": "assets/products/signature-lemon-earl-grey-iced-tea.png",
-          "recommendation": "점장추천"
-        },
-        {
-          "id": "fruits-passion-hibiscus-iced-tea",
-          "section": "fruitsSpecial",
-          "order": 5,
-          "active": true,
-          "status": "active",
-          "name": "패션후르츠\n히비스커스 아이스티",
-          "description": "패션후르츠 위에\n히비스커스티로\n상큼함을 더한\n스페셜 카페인티",
+          "name": "패션후르츠 히비스커스 아이스티",
+          "description": "패션후르츠에 히비스커스를 더한 상큼한 스페셜 아이스티",
           "price": "8.5",
           "image": "assets/products/fruits-passion-hibiscus-iced-tea.png"
+        },
+        {
+          "id": "non-coffee-triple-berry-ade",
+          "section": "nonCoffee",
+          "group": "right",
+          "order": 13,
+          "active": true,
+          "status": "active",
+          "name": "트리플베리 에이드",
+          "price": "8.0",
+          "image": null
+        },
+        {
+          "id": "non-coffee-lemon-ade",
+          "section": "nonCoffee",
+          "group": "right",
+          "order": 14,
+          "active": true,
+          "status": "active",
+          "name": "프레쉬 레몬에이드",
+          "price": "7.5",
+          "image": null
         }
       ]
     },

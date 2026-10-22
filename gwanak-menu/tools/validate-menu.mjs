@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 const root = process.cwd();
 const menuPath = resolve(root, "data/menu.json");
 const validStatuses = new Set(["active", "paused", "hidden", "seasonal"]);
+const seasonalColumnGroups = new Set(["seasonal", "left", "right"]);
 const requiredDessertSlots = new Set([
   "mango-bingsoo",
   "redbean-bingsoo",
@@ -175,6 +176,10 @@ function validateItem(sectionId, layout, item, ids, orders, slots) {
 
   if (layout === "dessert-editorial" && item.slot) {
     slots.add(item.slot);
+  }
+
+  if (layout === "seasonal-columns" && !seasonalColumnGroups.has(item.group)) {
+    error(context, "group must be \"seasonal\", \"left\", or \"right\" or the item will not render");
   }
 
   if (item.temperature && !isTemperatureValid(item.temperature)) {
