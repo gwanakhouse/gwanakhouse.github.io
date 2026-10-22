@@ -1067,6 +1067,7 @@ body {
 }
 
 .section-nonCoffee .item-heading {
+  align-items: center;
   gap: 6px;
   min-height: 19px;
   margin-right: 44px;
@@ -1418,11 +1419,11 @@ body {
 }
 
 .dessert-hero-ice {
-  left: 310px;
-  top: 92px;
-  width: 333px;
-  height: 229px;
-  z-index: 1;
+  left: 318px;
+  top: 98px;
+  width: 316px;
+  height: 218px;
+  z-index: 2;
 }
 
 .dessert-platter {
@@ -1597,7 +1598,7 @@ body {
 }
 
 .dessert-ice-cream {
-  left: 418px;
+  left: 455px;
   top: 871px;
   width: 225px;
   height: 152px;
